@@ -1,16 +1,20 @@
 def add(x, y):
+    """function to add two float numbers input by the user"""
     return x + y
 
 
 def subtract(x, y):
+    """function to subtract two float numbers input by the user"""
     return x - y
 
 
 def multiply(x, y):
+    """function to multiply two float numbers input by the user"""
     return x * y
 
 
 def divide(x, y):
+    """function to divide two float numbers input by the user, avoiding division by zero error"""
     if y != 0:
         return x / y
     else:
@@ -30,15 +34,19 @@ def main():
     num2 = float(input("Enter second number: "))
 
     if choice == "1":
-        print("The Result:", add(num1, num2))
+        print(add.__doc__)
+        print("Result:", add(num1, num2))
     elif choice == "2":
-        print("The Result:", subtract(num1, num2))
+        print(subtract.__doc__)
+        print("Result:", subtract(num1, num2))
     elif choice == "3":
-        print("The Result:", multiply(num1, num2))
+        print(multiply.__doc__)
+        print("Result:", multiply(num1, num2))
     elif choice == "4":
-        print("The Result:", divide(num1, num2))
+        print(divide.__doc__)
+        print("Result:", divide(num1, num2))
     else:
-        print("Invalid choice")
+        print("Invalid choice!!")
 
 
 if __name__ == "__main__":
